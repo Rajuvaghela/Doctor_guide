@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#ffff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:gravity="center">
+
+            <example.com.doctor_guide.util.RoundImageView
+                android:id="@+id/footer_imageview"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.4"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".6">
+
+               <TextView
+                   android:id="@+id/footer_item_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="Darshika"
+                   android:paddingLeft="6dp"
+                   android:layout_gravity="center"
+                   android:gravity="center|left"
+                   android:textStyle="bold"
+
+                   />
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:layout_gravity="end"
+                android:gravity="end" >
+
+                <TextView
+                    android:id="@+id/footer_item_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableEnd="@drawable/ic_rightside12"
+                    android:ellipsize="end"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="false"
+                    android:text="Darshika" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

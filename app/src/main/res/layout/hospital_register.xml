@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_hos_bname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Business Name"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edt_hos_person_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Person Name"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edt_hos_contact_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Mobile"
+            android:inputType="phone"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edt_hos_landline1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Landline No1"
+            android:inputType="phone"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+        android:id="@+id/edt_hos_landline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:hint="Landline No2"
+        android:inputType="phone"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_16sdp"
+        android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edt_hos_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edt_hos_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Website"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edt_hos_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="UserName"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edt_hos_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edt_hos_confim_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Confim Password"
+            android:inputType="textPassword"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edt_hos_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Area"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+        <EditText
+            android:id="@+id/edt_hos_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Address"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edt_hos_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="City"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+        <EditText
+            android:id="@+id/edt_hos_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Pincode"
+            android:inputType="number"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edt_hos_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="State"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edt_hos_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Country"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+        <EditText
+            android:id="@+id/edt_hos_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Latitude"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edt_hos_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Longitude"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:singleLine="true"/>
+
+
+        <Button
+            android:id="@+id/hos_btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/background"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

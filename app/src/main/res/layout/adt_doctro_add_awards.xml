@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Achievements"
+        android:textColor="@color/black"
+        android:textSize="@dimen/onefour"
+         />
+
+    <EditText
+
+        android:id="@+id/edt_degreename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/six"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/onetwo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/eight"
+        android:text="Organization/University"
+        android:textColor="@color/black"
+        android:textSize="@dimen/onefour"
+         />
+
+    <EditText
+        android:id="@+id/edt_univercity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/six"
+
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/onetwo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/eight"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="@dimen/onefour"
+         />
+
+    <EditText
+
+        android:id="@+id/edt_startdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/six"
+
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/onetwo" />
+
+
+</LinearLayout>

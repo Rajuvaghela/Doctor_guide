@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_doctor"
+            android:title="Doctor"
+            android:icon="@drawable/ic_drawer_docotr_icon"
+            />
+        <item
+            android:id="@+id/nav_hospitals"
+            android:title="Hospitals"
+            android:icon="@drawable/ic_drawer_hospitals_icon"
+            />
+        <item
+            android:id="@+id/nav_wellness"
+            android:title="Wellness"
+            android:icon="@drawable/ic_drawer_wellness"
+            />
+        <item
+            android:id="@+id/nav_pharamacies"
+            android:title="Pharamacies"
+            android:icon="@drawable/ic_drawer_pharmacies"
+            />
+
+        <item
+        android:id="@+id/nav_labs"
+        android:title="Labs"
+        android:icon="@drawable/ic_drawer_labs"
+            />
+
+
+        <item
+            android:id="@+id/nav_fitness"
+            android:title="Fitness"
+            android:icon="@drawable/ic_drawer_fitness_icon"
+            />
+
+        <item
+            android:id="@+id/nav_bloodbanks"
+            android:title="Bloodbanks"
+            android:icon="@drawable/ic_drawer_bloodbanks"
+            />
+        <item
+            android:id="@+id/nav_clinics"
+            android:title="Clinics"
+            android:icon="@drawable/ic_drawer_clinics"
+            />
+
+        <item
+            android:id="@+id/nav_stemcell"
+            android:title="Stemcell"
+            android:icon="@drawable/ic_drawer_stemcell_icon_png"
+            />
+        <item
+            android:id="@+id/nav_doc_login"
+            android:title="Log in"
+            android:icon="@drawable/login"
+            />
+        <item
+            android:id="@+id/nav_doctor_profile"
+            android:icon="@drawable/ic_drawer_docotr_icon"
+            android:title="Doctor Profile" />
+
+        <item
+            android:id="@+id/nav_wellness_profile"
+            android:icon="@drawable/ic_drawer_docotr_icon"
+            android:title="Wellness Profile" />
+
+        <item
+            android:id="@+id/nav_hospital_profile"
+            android:icon="@drawable/ic_drawer_docotr_icon"
+            android:title="Hospital Profile" />
+    </group>
+
+
+
+</menu>

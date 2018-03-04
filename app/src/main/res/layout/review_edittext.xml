@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/review_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/five"
+        android:layout_marginLeft="@dimen/onezero"
+        android:layout_marginRight="@dimen/onezero"
+        android:layout_marginTop="@dimen/five"
+        android:padding="@dimen/onezero"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/oneeight"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/review_name_of_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/five"
+        android:layout_marginLeft="@dimen/onezero"
+        android:layout_marginRight="@dimen/onezero"
+        android:layout_marginTop="@dimen/five"
+        android:background="@drawable/corner_edittext"
+        android:hint="Name"
+        android:padding="@dimen/onezero" />
+
+    <EditText
+        android:id="@+id/review_mobno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/five"
+        android:layout_marginLeft="@dimen/onezero"
+        android:layout_marginRight="@dimen/onezero"
+        android:layout_marginTop="@dimen/five"
+        android:background="@drawable/corner_edittext"
+        android:hint="Mobile number"
+        android:inputType="number"
+        android:padding="@dimen/onezero" />
+
+    <EditText
+        android:id="@+id/edt_text_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/onezero"
+        android:layout_marginLeft="@dimen/onezero"
+        android:layout_marginRight="@dimen/onezero"
+        android:layout_marginTop="@dimen/onezero"
+        android:background="@drawable/corner_edittext"
+        android:gravity="top|left"
+        android:hint="Review"
+        android:lines="4"
+        android:padding="@dimen/onezero" />
+
+    <RatingBar
+        android:id="@+id/doctor_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/onezero"
+        android:layout_marginLeft="@dimen/onezero"
+        android:layout_marginRight="@dimen/onezero"
+        android:layout_marginTop="@dimen/onezero"
+        android:numStars="5"
+        android:stepSize=".5" />
+</LinearLayout>

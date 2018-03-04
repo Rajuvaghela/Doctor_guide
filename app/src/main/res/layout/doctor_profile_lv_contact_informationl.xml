@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lv_contact_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/six">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/six"
+                android:gravity="center"
+                android:text="Contact Information"
+                android:textSize="@dimen/twozero"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Area"
+            android:textSize="@dimen/onefour"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/edt_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/six"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onetwo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:text="Address"
+            android:textSize="@dimen/onefour"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/six"
+
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onetwo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:text="City"
+            android:textSize="@dimen/onefour"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/edt_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/six"
+
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onetwo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:text="Pincode"
+            android:textSize="@dimen/onefour"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/edt_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/six"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onetwo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:text="State"
+            android:textSize="@dimen/onefour"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/edt_State"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/six"
+
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onetwo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:text="Country"
+            android:textSize="@dimen/onefour"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/edt_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/six"
+
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onetwo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:text="Mobile Number 1"
+            android:textSize="@dimen/onefour"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_mno1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/six"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onetwo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:text="Mobile Number 2"
+            android:textSize="@dimen/onefour"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_mno2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/six"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onetwo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:text="Landline Number 1"
+            android:textSize="@dimen/onefour"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_lanno1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/six"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onetwo" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:text="Landline Number 2"
+            android:textSize="@dimen/onefour"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_lanno2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/six"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onetwo" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:text="Website"
+            android:textSize="@dimen/onefour"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/six"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onetwo" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:text="Email"
+            android:textSize="@dimen/onefour"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/six"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/onetwo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/eight"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_contact_previous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_margin="@dimen/six"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shap"
+                android:clickable="false"
+                android:enabled="false"
+                android:visibility="gone"
+                android:text="PREVIOUS"
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:id="@+id/btn_contact_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shap"
+                android:text="NEXT"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

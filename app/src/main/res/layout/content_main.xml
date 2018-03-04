@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="4"
+    android:background="#ffff"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="example.com.doctor_guide.Activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:layout_alignBottom="@+id/image_count"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <LinearLayout
+
+
+                android:id="@+id/image_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal"></LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.1"
+        android:background="#ffff"
+        android:onClick="layout"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="layout1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8">
+
+                    <ImageView
+                        android:id="@+id/doctor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="doctor"
+                        android:src="@drawable/doctorr"
+                        android:stateListAnimator="@drawable/state_list_animator_z" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="1.2"
+                    android:gravity="top">
+
+                    <Button
+                        android:id="@+id/doctorbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:background="#ffff"
+                        android:gravity="top|center"
+                        android:onClick="doctorbtn"
+                        android:stateListAnimator="@drawable/state_list_animator_z"
+                        android:text="Doctor"
+                        android:textAllCaps="false"
+                        android:textColor="@color/background"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8">
+
+                    <ImageView
+                        android:id="@+id/hospital"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="hospitals"
+                        android:paddingTop="1dp"
+                        android:src="@drawable/hospi"
+                        android:stateListAnimator="@drawable/state_list_animator_z" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="1.2"
+                    android:gravity="top">
+
+                    <Button
+                        android:id="@+id/hospitalbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:background="#ffff"
+                        android:gravity="top|center"
+                        android:onClick="hospitalbtn"
+                        android:stateListAnimator="@drawable/state_list_animator_z"
+                        android:text="Hospitals"
+                        android:textAllCaps="false"
+                        android:textColor="@color/background"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8">
+
+                    <ImageView
+                        android:id="@+id/wellness"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="wellness"
+                        android:src="@drawable/spaa"
+                        android:stateListAnimator="@drawable/state_list_animator_z" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="1.2"
+                    android:gravity="top">
+
+                    <Button
+                        android:id="@+id/wellnessbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:background="#ffff"
+                        android:gravity="top|center"
+                        android:onClick="wellnessbtn"
+                        android:stateListAnimator="@drawable/state_list_animator_z"
+                        android:text="Wellness"
+                        android:textAllCaps="false"
+                        android:textColor="@color/background"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8">
+
+                    <ImageView
+                        android:id="@+id/pharmacies"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="pharamacies"
+                        android:src="@drawable/pharma"
+                        android:stateListAnimator="@drawable/state_list_animator_z" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="1.2"
+                    android:gravity="top">
+
+                    <Button
+                        android:id="@+id/pharmaciesbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:background="#ffff"
+                        android:gravity="top|center"
+                        android:onClick="pharamaciesbtn"
+                        android:stateListAnimator="@drawable/state_list_animator_z"
+                        android:text="Pharamacies"
+                        android:textAllCaps="false"
+                        android:textColor="@color/background"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8">
+
+                    <ImageView
+                        android:id="@+id/labs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="labs"
+                        android:src="@drawable/labss"
+                        android:stateListAnimator="@drawable/state_list_animator_z" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="1.2"
+                    android:gravity="top">
+
+                    <Button
+                        android:id="@+id/labsbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:background="#ffff"
+                        android:gravity="top|center"
+                        android:onClick="labsbtn"
+                        android:stateListAnimator="@drawable/state_list_animator_z"
+                        android:text="Labs"
+                        android:textAllCaps="false"
+                        android:textColor="@color/background"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8">
+
+                    <ImageView
+                        android:id="@+id/fitness"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="fitness"
+                        android:src="@drawable/fitnesss"
+                        android:stateListAnimator="@drawable/state_list_animator_z" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="1.2"
+                    android:gravity="top">
+
+                    <Button
+                        android:id="@+id/fitnessbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:background="#ffff"
+                        android:gravity="top|center"
+                        android:onClick="fitnessbtn"
+                        android:stateListAnimator="@drawable/state_list_animator_z"
+                        android:text="Fitness"
+                        android:textAllCaps="false"
+                        android:textColor="@color/background"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8">
+
+                    <ImageView
+                        android:id="@+id/bloodbanks"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="bloodbanks"
+                        android:src="@drawable/bloodbankss"
+                        android:stateListAnimator="@drawable/state_list_animator_z" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="1.2"
+                    android:gravity="top">
+
+                    <Button
+
+                        android:id="@+id/bloodbanksbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:background="#ffff"
+                        android:gravity="top|center"
+                        android:onClick="bloodbanksbtn"
+                        android:stateListAnimator="@drawable/state_list_animator_z"
+                        android:text="BloodBanks"
+                        android:textAllCaps="false"
+                        android:textColor="@color/background"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8">
+
+                    <ImageView
+                        android:id="@+id/clinics"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="clinics"
+                        android:src="@drawable/clinicss"
+                        android:stateListAnimator="@drawable/state_list_animator_z" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="1.2"
+                    android:gravity="top">
+
+                    <Button
+                        android:id="@+id/clinicsbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:background="#ffff"
+                        android:gravity="top|center"
+                        android:onClick="clinicsbtn"
+                        android:stateListAnimator="@drawable/state_list_animator_z"
+                        android:text="Clinics"
+                        android:textAllCaps="false"
+                        android:textColor="@color/background"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8">
+
+                    <ImageView
+                        android:id="@+id/stemcell"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="stemcell"
+                        android:src="@drawable/wellness"
+                        android:stateListAnimator="@drawable/state_list_animator_z" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="1.2"
+                    android:gravity="top">
+
+                    <Button
+                        android:id="@+id/stemcellbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:background="#ffff"
+                        android:gravity="top|center"
+                        android:onClick="stemcellbtn"
+                        android:stateListAnimator="@drawable/state_list_animator_z"
+                        android:text="Stemcell"
+                        android:textAllCaps="false"
+                        android:textColor="@color/background"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".45"
+        android:background="@color/background"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom|center"
+                android:layout_weight="1.3"
+                android:gravity="bottom|center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom">
+
+                    <ImageView
+                        android:id="@+id/btn_deal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="bottom"
+                        android:background="@color/background"
+                        android:onClick="btndeal"
+                        android:src="@drawable/ic_deal_icon111"
+                        android:stateListAnimator="@drawable/state_list_animator_z" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top|center"
+                android:layout_weight=".7"
+                android:background="@color/background"
+                android:gravity="top|center">
+
+                <TextView
+                    android:id="@+id/tv_deal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:background="@color/background"
+                    android:gravity="top|center"
+                    android:onClick="tvdeal"
+                    android:paddingBottom="2dp"
+                    android:stateListAnimator="@drawable/state_list_animator_z"
+                    android:text="Deal"
+                    android:textColor="#ffff"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom|center"
+                android:layout_weight="1.3"
+                android:gravity="bottom|center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom">
+
+                    <ImageView
+                        android:id="@+id/btn_festival"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@color/background"
+                        android:onClick="btnfestival"
+                        android:src="@drawable/ic_festival_icon11"
+                        android:stateListAnimator="@drawable/state_list_animator_z" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top|center"
+                android:layout_weight=".7"
+                android:background="@color/background"
+                android:gravity="top|center">
+
+                <TextView
+                    android:id="@+id/tv_festival"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:background="@color/background"
+                    android:gravity="top|center"
+                    android:onClick="tvfestival"
+                    android:paddingBottom="2dp"
+                    android:stateListAnimator="@drawable/state_list_animator_z"
+                    android:text="Festival"
+                    android:textColor="#ffff"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom|center"
+                android:layout_weight="1.3"
+                android:gravity="bottom|center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="bottom|center">
+
+                    <ImageView
+                        android:id="@+id/btn_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@color/background"
+                        android:onClick="btnshop"
+                        android:paddingTop="3dp"
+                        android:src="@drawable/ic_shop_icon"
+                        android:stateListAnimator="@drawable/state_list_animator_z" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top|center"
+                android:layout_weight=".7"
+                android:background="@color/background"
+                android:gravity="top|center">
+
+                <TextView
+                    android:id="@+id/tv_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:background="@color/background"
+                    android:gravity="top|center"
+                    android:onClick="tvshop"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="6dp"
+                    android:stateListAnimator="@drawable/state_list_animator_z"
+                    android:text="Shop"
+                    android:textColor="#ffff"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom|center"
+                android:layout_weight="1.3"
+                android:gravity="bottom|center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom">
+
+                    <ImageView
+                        android:id="@+id/btn_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="bottom"
+                        android:background="@color/background"
+                        android:onClick="btnevent"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/ic_event_icon"
+                        android:stateListAnimator="@drawable/state_list_animator_z" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top|center"
+                android:layout_weight=".7"
+                android:background="@color/background"
+                android:gravity="top|center">
+
+                <TextView
+                    android:id="@+id/tv_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:background="@color/background"
+                    android:gravity="top|center"
+                    android:onClick="tvevent"
+                    android:paddingBottom="2dp"
+                    android:stateListAnimator="@drawable/state_list_animator_z"
+                    android:text="Event"
+                    android:textColor="#ffff"
+                    android:textSize="12dp"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
